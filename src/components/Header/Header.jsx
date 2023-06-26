@@ -13,7 +13,9 @@ import {
   FaComments,
   FaPhone,
 } from "react-icons/fa";
-import { NavLink, Outlet } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+import Home from "../Home/Home";
+import About from "../About/About";
 
 const Header = () => {
   const [isOpen, setOpen] = useState(false);
@@ -57,7 +59,7 @@ const Header = () => {
           </div>
           <hr />
 
-          <div className="text-dark-MenuText lg:px-10 px-3 mt-16  ">
+          <div className="text-dark-MenuText lg:px-10 px-3 xl:mt-8 2xl:mt-16  ">
             <ul>
               <li className="hover:bg-dark-PrimaryBg  rounded text-xl transition duration-1000">
                 <NavLink
@@ -72,7 +74,7 @@ const Header = () => {
               </li>
               <li className="hover:bg-dark-PrimaryBg rounded text-xl  transition duration-1000 mt-3">
                 <NavLink
-                  to="/"
+                  to="/about"
                   className={`flex items-center gap-5 p-3  ${({ isActive }) => {
                     isActive && "bg-dark-PrimaryBg";
                   }}`}
@@ -139,8 +141,12 @@ const Header = () => {
             </ul>
           </div>
         </div>
-        <div className="bg-dark-PrimaryBg w-full p-2 flex lg:ml-80 mt-[100px] lg:mt-[0px] z-1">
-          <Outlet></Outlet>
+        <div className="w-full p-2 flex lg:pl-80 pt-[100px] lg:pt-[0px] z-1">
+          {/* <Outlet></Outlet> */}
+          <div>
+            <Home></Home>
+            <About></About>
+          </div>
         </div>
       </div>
     </div>

@@ -7,6 +7,7 @@ export default {
         dark: {
           PrimaryBg: "#111418",
           SecondaryBg: "#19293B",
+          thirdBg: "#191C26",
           PrimaryText: "#ffffff",
           SecondaryText: "#999999",
           MenuText: "#F3FAFF",
@@ -14,6 +15,7 @@ export default {
         light: {
           PrimaryBg: "#ffffff",
           SecondaryBg: "#f6f6f6",
+          thirdBg: "#191C26",
           AccentBg: "#ffffff",
           PrimaryText: "#121212",
           SecondaryText: "#757575",
